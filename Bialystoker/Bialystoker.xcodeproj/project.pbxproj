@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45A2141661300DBB90B /* AppDelegate.swift */; };
-		BC74F45D2141661300DBB90B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45C2141661300DBB90B /* FirstViewController.swift */; };
-		BC74F45F2141661300DBB90B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45E2141661300DBB90B /* SecondViewController.swift */; };
+		BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45C2141661300DBB90B /* MapViewController.swift */; };
+		BC74F45F2141661300DBB90B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45E2141661300DBB90B /* ListViewController.swift */; };
 		BC74F4622141661300DBB90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4602141661300DBB90B /* Main.storyboard */; };
 		BC74F4642141661400DBB90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4632141661400DBB90B /* Assets.xcassets */; };
 		BC74F4672141661400DBB90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4652141661400DBB90B /* LaunchScreen.storyboard */; };
 		BC74F4722141661400DBB90B /* BialystokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4712141661400DBB90B /* BialystokerTests.swift */; };
 		BC74F47D2141661400DBB90B /* BialystokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F47C2141661400DBB90B /* BialystokerUITests.swift */; };
+		BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F48A2141712600DBB90B /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* Begin PBXFileReference section */
 		BC74F4572141661300DBB90B /* Bialystoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bialystoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74F45A2141661300DBB90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC74F45C2141661300DBB90B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BC74F45E2141661300DBB90B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BC74F45C2141661300DBB90B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BC74F45E2141661300DBB90B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BC74F4612141661300DBB90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC74F4632141661400DBB90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC74F4662141661400DBB90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		BC74F4782141661400DBB90B /* BialystokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BialystokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74F47C2141661400DBB90B /* BialystokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BialystokerUITests.swift; sourceTree = "<group>"; };
 		BC74F47E2141661400DBB90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC74F48A2141712600DBB90B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		BC74F4592141661300DBB90B /* Bialystoker */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F48E2141717800DBB90B /* about */,
+				BC74F48D2141716500DBB90B /* list */,
+				BC74F48C2141715A00DBB90B /* map */,
 				BC74F45A2141661300DBB90B /* AppDelegate.swift */,
-				BC74F45C2141661300DBB90B /* FirstViewController.swift */,
-				BC74F45E2141661300DBB90B /* SecondViewController.swift */,
 				BC74F4602141661300DBB90B /* Main.storyboard */,
 				BC74F4632141661400DBB90B /* Assets.xcassets */,
 				BC74F4652141661400DBB90B /* LaunchScreen.storyboard */,
@@ -126,6 +129,30 @@
 				BC74F47E2141661400DBB90B /* Info.plist */,
 			);
 			path = BialystokerUITests;
+			sourceTree = "<group>";
+		};
+		BC74F48C2141715A00DBB90B /* map */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F45C2141661300DBB90B /* MapViewController.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		BC74F48D2141716500DBB90B /* list */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F45E2141661300DBB90B /* ListViewController.swift */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		BC74F48E2141717800DBB90B /* about */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F48A2141712600DBB90B /* AboutViewController.swift */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC74F45F2141661300DBB90B /* SecondViewController.swift in Sources */,
+				BC74F45F2141661300DBB90B /* ListViewController.swift in Sources */,
 				BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */,
-				BC74F45D2141661300DBB90B /* FirstViewController.swift in Sources */,
+				BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */,
+				BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

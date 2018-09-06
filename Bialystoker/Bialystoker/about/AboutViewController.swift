@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  AboutViewController.swift
 //  Bialystoker
 //
 //  Created by Marcin Lepicki on 06/09/2018.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class AboutViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-}
 
+}
