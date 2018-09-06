@@ -1,0 +1,20 @@
+language: objective-c
+osx_image: xcode9.3
+xcode_project: DVR.xcodeproj
+
+matrix:
+  include:
+    - xcode_scheme: DVR-iOS
+      xcode_sdk: iphonesimulator
+      env:
+        - DESTINATION="iOS Simulator,OS=11.3,name=iPhone X"
+    - xcode_scheme: DVR-macOS
+      xcode_sdk: macosx
+      env:
+        - DESTINATION="macOS,arch=x86_64"
+    - env:
+      - SWIFT_BUILD=true
+
+script: 
+  - ./Scripts/travis-build-test.sh
+

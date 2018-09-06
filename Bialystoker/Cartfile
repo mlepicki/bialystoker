@@ -7,3 +7,5 @@ github "Swinject/SwinjectStoryboard" ~> 2.0.2
 
 github "JonasGessner/JGProgressHUD" ~> 2.0.3
 
+github "contentful/contentful.swift" ~> 3.1.2
+

@@ -1,0 +1,40 @@
+
+excluded:
+  - Carthage
+  - Packages
+  - Tests
+  - .build
+  - build
+disabled_rules:
+- syntactic_sugar
+- type_body_length
+- type_name
+- cyclomatic_complexity
+- function_parameter_count
+- legacy_constant
+- force_cast
+- force_try
+# Rule that says says type that conforms to protocol must be a class.
+# If we are in pure swift, this is not necessary.
+- class_delegate_protocol
+- weak_delegate
+- vertical_parameter_alignment
+# ignoring since some file that exists on travis, but not locally is throwing this as a compile error
+# Also, swiftlint says it will be removed in future versions
+- identifier_name
+- nesting # Disable warnings about structures nested more than 1 level deep.
+
+# Parameterized
+line_length: 
+  warning: 150
+  ignores_comments: true
+  ignores_urls: true
+file_length:
+  warning: 800
+vertical_whitespace:
+  max_empty_lines: 2
+function_body_length: 110
+#identifier_name:
+#  min_length: 2
+#  max_length: 30
+#

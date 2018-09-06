@@ -22,6 +22,16 @@
 		BC74F4A721417D4F00DBB90B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A121417D4F00DBB90B /* ObjectMapper.framework */; };
 		BC74F4A821417D4F00DBB90B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A221417D4F00DBB90B /* Alamofire.framework */; };
 		BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */; };
+		BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4AC21417E7F00DBB90B /* SwinjectStoryboardExtension.swift */; };
+		BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4AE21417F9F00DBB90B /* AboutViewModel.swift */; };
+		BC74F4B1214182C500DBB90B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B0214182C500DBB90B /* ListViewModel.swift */; };
+		BC74F4B3214182DA00DBB90B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B2214182DA00DBB90B /* MapViewModel.swift */; };
+		BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B52141839A00DBB90B /* PlaceRepository.swift */; };
+		BC74F4BB2141871C00DBB90B /* Contentful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4B92141871C00DBB90B /* Contentful.framework */; };
+		BC74F4BC2141871C00DBB90B /* Interstellar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4BA2141871C00DBB90B /* Interstellar.framework */; };
+		BC74F4BF214189DC00DBB90B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4BE214189DC00DBB90B /* Place.swift */; };
+		BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C32141962700DBB90B /* BaseViewController.swift */; };
+		BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,16 @@
 		BC74F4A121417D4F00DBB90B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
 		BC74F4A221417D4F00DBB90B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4AC21417E7F00DBB90B /* SwinjectStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardExtension.swift; sourceTree = "<group>"; };
+		BC74F4AE21417F9F00DBB90B /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		BC74F4B0214182C500DBB90B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		BC74F4B2214182DA00DBB90B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BC74F4B52141839A00DBB90B /* PlaceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
+		BC74F4B92141871C00DBB90B /* Contentful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contentful.framework; path = Carthage/Build/iOS/Contentful.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4BA2141871C00DBB90B /* Interstellar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Interstellar.framework; path = Carthage/Build/iOS/Interstellar.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4BE214189DC00DBB90B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		BC74F4C32141962700DBB90B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +91,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC74F4A421417D4F00DBB90B /* JGProgressHUD.framework in Frameworks */,
+				BC74F4BB2141871C00DBB90B /* Contentful.framework in Frameworks */,
 				BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */,
+				BC74F4BC2141871C00DBB90B /* Interstellar.framework in Frameworks */,
 				BC74F4A521417D4F00DBB90B /* Swinject.framework in Frameworks */,
 				BC74F4A721417D4F00DBB90B /* ObjectMapper.framework in Frameworks */,
 				BC74F4A821417D4F00DBB90B /* Alamofire.framework in Frameworks */,
@@ -120,7 +142,10 @@
 		BC74F4592141661300DBB90B /* Bialystoker */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F4AB21417E3A00DBB90B /* di */,
 				BC74F4AA21417D6400DBB90B /* features */,
+				BC74F4B72141860500DBB90B /* models */,
+				BC74F4B42141837000DBB90B /* repositories */,
 				BC74F45A2141661300DBB90B /* AppDelegate.swift */,
 				BC74F4602141661300DBB90B /* Main.storyboard */,
 				BC74F4632141661400DBB90B /* Assets.xcassets */,
@@ -152,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				BC74F45C2141661300DBB90B /* MapViewController.swift */,
+				BC74F4B2214182DA00DBB90B /* MapViewModel.swift */,
+				BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -160,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				BC74F45E2141661300DBB90B /* ListViewController.swift */,
+				BC74F4B0214182C500DBB90B /* ListViewModel.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -168,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				BC74F48A2141712600DBB90B /* AboutViewController.swift */,
+				BC74F4AE21417F9F00DBB90B /* AboutViewModel.swift */,
 			);
 			path = about;
 			sourceTree = "<group>";
@@ -175,6 +204,8 @@
 		BC74F4902141791F00DBB90B /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F4B92141871C00DBB90B /* Contentful.framework */,
+				BC74F4BA2141871C00DBB90B /* Interstellar.framework */,
 				BC74F4A221417D4F00DBB90B /* Alamofire.framework */,
 				BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */,
 				BC74F49E21417D4E00DBB90B /* JGProgressHUD.framework */,
@@ -191,8 +222,49 @@
 				BC74F48E2141717800DBB90B /* about */,
 				BC74F48D2141716500DBB90B /* list */,
 				BC74F48C2141715A00DBB90B /* map */,
+				BC74F4C32141962700DBB90B /* BaseViewController.swift */,
 			);
 			path = features;
+			sourceTree = "<group>";
+		};
+		BC74F4AB21417E3A00DBB90B /* di */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4AC21417E7F00DBB90B /* SwinjectStoryboardExtension.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		BC74F4B42141837000DBB90B /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4B52141839A00DBB90B /* PlaceRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		BC74F4B72141860500DBB90B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4BD214189B900DBB90B /* contentful */,
+				BC74F4B82141861200DBB90B /* json */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BC74F4B82141861200DBB90B /* json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		BC74F4BD214189B900DBB90B /* contentful */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4BE214189DC00DBB90B /* Place.swift */,
+			);
+			path = contentful;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +421,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Contentful.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Interstellar.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
@@ -356,6 +430,8 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JGProgressHUD.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,8 +447,16 @@
 			files = (
 				BC74F45F2141661300DBB90B /* ListViewController.swift in Sources */,
 				BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */,
+				BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */,
+				BC74F4B1214182C500DBB90B /* ListViewModel.swift in Sources */,
+				BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */,
+				BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */,
+				BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */,
+				BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */,
 				BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */,
 				BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */,
+				BC74F4B3214182DA00DBB90B /* MapViewModel.swift in Sources */,
+				BC74F4BF214189DC00DBB90B /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
