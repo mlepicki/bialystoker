@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "4.7.3"
+github "Hearst-DD/ObjectMapper" "3.3.0"
+github "JonasGessner/JGProgressHUD" "v2.0.3"
+github "Swinject/Swinject" "2.4.1"
+github "Swinject/SwinjectStoryboard" "2.0.2"
+github "tristanhimmelman/AlamofireObjectMapper" "5.1.0"

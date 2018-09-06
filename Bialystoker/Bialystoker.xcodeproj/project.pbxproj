@@ -16,6 +16,12 @@
 		BC74F4722141661400DBB90B /* BialystokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4712141661400DBB90B /* BialystokerTests.swift */; };
 		BC74F47D2141661400DBB90B /* BialystokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F47C2141661400DBB90B /* BialystokerUITests.swift */; };
 		BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F48A2141712600DBB90B /* AboutViewController.swift */; };
+		BC74F4A421417D4F00DBB90B /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F49E21417D4E00DBB90B /* JGProgressHUD.framework */; };
+		BC74F4A521417D4F00DBB90B /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F49F21417D4E00DBB90B /* Swinject.framework */; };
+		BC74F4A621417D4F00DBB90B /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A021417D4E00DBB90B /* SwinjectStoryboard.framework */; };
+		BC74F4A721417D4F00DBB90B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A121417D4F00DBB90B /* ObjectMapper.framework */; };
+		BC74F4A821417D4F00DBB90B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A221417D4F00DBB90B /* Alamofire.framework */; };
+		BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		BC74F47C2141661400DBB90B /* BialystokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BialystokerUITests.swift; sourceTree = "<group>"; };
 		BC74F47E2141661400DBB90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC74F48A2141712600DBB90B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BC74F49E21417D4E00DBB90B /* JGProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JGProgressHUD.framework; path = Carthage/Build/iOS/JGProgressHUD.framework; sourceTree = SOURCE_ROOT; };
+		BC74F49F21417D4E00DBB90B /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4A021417D4E00DBB90B /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4A121417D4F00DBB90B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4A221417D4F00DBB90B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC74F4A421417D4F00DBB90B /* JGProgressHUD.framework in Frameworks */,
+				BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */,
+				BC74F4A521417D4F00DBB90B /* Swinject.framework in Frameworks */,
+				BC74F4A721417D4F00DBB90B /* ObjectMapper.framework in Frameworks */,
+				BC74F4A821417D4F00DBB90B /* Alamofire.framework in Frameworks */,
+				BC74F4A621417D4F00DBB90B /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BC74F4592141661300DBB90B /* Bialystoker */,
+				BC74F4902141791F00DBB90B /* frameworks */,
 				BC74F4702141661400DBB90B /* BialystokerTests */,
 				BC74F47B2141661400DBB90B /* BialystokerUITests */,
 				BC74F4582141661300DBB90B /* Products */,
@@ -101,9 +120,7 @@
 		BC74F4592141661300DBB90B /* Bialystoker */ = {
 			isa = PBXGroup;
 			children = (
-				BC74F48E2141717800DBB90B /* about */,
-				BC74F48D2141716500DBB90B /* list */,
-				BC74F48C2141715A00DBB90B /* map */,
+				BC74F4AA21417D6400DBB90B /* features */,
 				BC74F45A2141661300DBB90B /* AppDelegate.swift */,
 				BC74F4602141661300DBB90B /* Main.storyboard */,
 				BC74F4632141661400DBB90B /* Assets.xcassets */,
@@ -155,6 +172,29 @@
 			path = about;
 			sourceTree = "<group>";
 		};
+		BC74F4902141791F00DBB90B /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4A221417D4F00DBB90B /* Alamofire.framework */,
+				BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */,
+				BC74F49E21417D4E00DBB90B /* JGProgressHUD.framework */,
+				BC74F4A121417D4F00DBB90B /* ObjectMapper.framework */,
+				BC74F49F21417D4E00DBB90B /* Swinject.framework */,
+				BC74F4A021417D4E00DBB90B /* SwinjectStoryboard.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		BC74F4AA21417D6400DBB90B /* features */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F48E2141717800DBB90B /* about */,
+				BC74F48D2141716500DBB90B /* list */,
+				BC74F48C2141715A00DBB90B /* map */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +202,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC74F4812141661400DBB90B /* Build configuration list for PBXNativeTarget "Bialystoker" */;
 			buildPhases = (
+				BC74F48F2141760500DBB90B /* ShellScript */,
+				BC74F49D2141796500DBB90B /* ShellScript */,
 				BC74F4532141661300DBB90B /* Sources */,
 				BC74F4542141661300DBB90B /* Frameworks */,
 				BC74F4552141661300DBB90B /* Resources */,
@@ -280,6 +322,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC74F48F2141760500DBB90B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		BC74F49D2141796500DBB90B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JGProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JGProgressHUD.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC74F4532141661300DBB90B /* Sources */ = {
@@ -464,6 +547,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D43WT9A9F2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bialystoker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,6 +569,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D43WT9A9F2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bialystoker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
