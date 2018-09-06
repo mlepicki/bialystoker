@@ -33,6 +33,10 @@ extension SwinjectStoryboard {
             PlaceRepository(client: r.resolve(Client.self)!)
         }
         
+        defaultContainer.register(AboutRepository.self) { _ in
+            AboutRepository()
+        }
+        
         // view models
         defaultContainer.register(PlaceMapViewModel.self) { r in
             PlaceMapViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
@@ -42,8 +46,8 @@ extension SwinjectStoryboard {
             PlaceListViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
         }
         
-        defaultContainer.register(AboutViewModel.self) { _ in
-            AboutViewModel()
+        defaultContainer.register(AboutViewModel.self) { r in
+            AboutViewModel(aboutRepository: r.resolve(AboutRepository.self)!)
         }
         
         // view controllers

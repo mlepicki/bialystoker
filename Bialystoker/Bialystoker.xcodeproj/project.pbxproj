@@ -36,6 +36,8 @@
 		BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C92141B03500DBB90B /* PlaceCell.swift */; };
 		BC74F4CC2141B29900DBB90B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */; };
 		BC74F4CF2141B62B00DBB90B /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4CE2141B62B00DBB90B /* PlaceDetailsViewController.swift */; };
+		BC74F4D12141C1BF00DBB90B /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4D02141C1BF00DBB90B /* About.swift */; };
+		BC74F4D32141C43E00DBB90B /* AboutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4D22141C43E00DBB90B /* AboutRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		BC74F4C92141B03500DBB90B /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		BC74F4CE2141B62B00DBB90B /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		BC74F4D02141C1BF00DBB90B /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		BC74F4D22141C43E00DBB90B /* AboutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				BC74F4B52141839A00DBB90B /* PlaceRepository.swift */,
+				BC74F4D22141C43E00DBB90B /* AboutRepository.swift */,
 			);
 			path = repositories;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 		BC74F4B82141861200DBB90B /* json */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F4D02141C1BF00DBB90B /* About.swift */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -469,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC74F45F2141661300DBB90B /* PlaceListViewController.swift in Sources */,
+				BC74F4D12141C1BF00DBB90B /* About.swift in Sources */,
 				BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */,
 				BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */,
 				BC74F4B1214182C500DBB90B /* PlaceListViewModel.swift in Sources */,
@@ -476,6 +483,7 @@
 				BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */,
 				BC74F4CF2141B62B00DBB90B /* PlaceDetailsViewController.swift in Sources */,
 				BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */,
+				BC74F4D32141C43E00DBB90B /* AboutRepository.swift in Sources */,
 				BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */,
 				BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */,
 				BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */,

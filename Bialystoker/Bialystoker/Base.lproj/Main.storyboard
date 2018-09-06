@@ -50,10 +50,46 @@
                     <view key="view" contentMode="scaleToFill" id="EGo-az-l0Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEa-RE-JrN">
+                                <rect key="frame" x="20" y="40" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cI-ce-mDF">
+                                <rect key="frame" x="40" y="80" width="295" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If7-Du-IBm">
+                                <rect key="frame" x="20" y="598" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60392156860000001" green="0.63137254899999995" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4cI-ce-mDF" firstAttribute="top" secondItem="DEa-RE-JrN" secondAttribute="bottom" constant="40" id="JrG-p3-9yl"/>
+                            <constraint firstItem="DEa-RE-JrN" firstAttribute="leading" secondItem="NHP-6o-ODP" secondAttribute="leading" constant="20" id="PEh-1o-LZF"/>
+                            <constraint firstItem="If7-Du-IBm" firstAttribute="leading" secondItem="NHP-6o-ODP" secondAttribute="leading" constant="20" id="Qvi-TO-JEr"/>
+                            <constraint firstItem="NHP-6o-ODP" firstAttribute="trailing" secondItem="4cI-ce-mDF" secondAttribute="trailing" constant="40" id="T49-yf-env"/>
+                            <constraint firstItem="NHP-6o-ODP" firstAttribute="bottom" secondItem="If7-Du-IBm" secondAttribute="bottom" constant="20" id="UXT-8R-y6A"/>
+                            <constraint firstItem="DEa-RE-JrN" firstAttribute="top" secondItem="NHP-6o-ODP" secondAttribute="top" constant="20" id="fLd-cx-GJo"/>
+                            <constraint firstItem="NHP-6o-ODP" firstAttribute="trailing" secondItem="DEa-RE-JrN" secondAttribute="trailing" constant="20" id="iEG-vM-UWm"/>
+                            <constraint firstItem="NHP-6o-ODP" firstAttribute="trailing" secondItem="If7-Du-IBm" secondAttribute="trailing" constant="20" id="iS5-LQ-a9a"/>
+                            <constraint firstItem="4cI-ce-mDF" firstAttribute="leading" secondItem="NHP-6o-ODP" secondAttribute="leading" constant="40" id="nrl-Sh-FkJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NHP-6o-ODP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="about" id="zcO-Be-BaT"/>
+                    <connections>
+                        <outlet property="copyrightLabel" destination="If7-Du-IBm" id="et8-Bn-kPg"/>
+                        <outlet property="descriptionLabel" destination="4cI-ce-mDF" id="MUr-mz-1GY"/>
+                        <outlet property="titleLabel" destination="DEa-RE-JrN" id="xc6-be-L1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUf-PL-Spt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
