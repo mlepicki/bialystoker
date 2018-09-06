@@ -8,6 +8,10 @@
 
 import UIKit
 
-class ListViewModel {
-
+class ListViewModel: BasePlaceAwareViewModel {
+    
+    override init(placeRepository: PlaceRepository) {
+        super.init(placeRepository: placeRepository)
+    }
+    
 }

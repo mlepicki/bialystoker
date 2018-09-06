@@ -11,6 +11,7 @@ import MapKit
 
 class MapViewController: BaseViewController, MKMapViewDelegate {
 
+    // Injected
     var viewModel: MapViewModel!
     
     @IBOutlet weak var mapView: MKMapView!
@@ -30,7 +31,6 @@ class MapViewController: BaseViewController, MKMapViewDelegate {
     private func setupMapView() {
         mapView.delegate = self
         mapView.showsUserLocation = true
-        
     }
     
     private func setupViewModelBinding() {
@@ -70,6 +70,8 @@ class MapViewController: BaseViewController, MKMapViewDelegate {
 
         mapView.showAnnotations(mapView.annotations, animated: true)
     }
+    
+    // MARK: MKMapViewDelegate
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let reuseIdentifier = "annotationView"

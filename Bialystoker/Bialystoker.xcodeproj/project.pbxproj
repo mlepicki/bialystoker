@@ -32,6 +32,9 @@
 		BC74F4BF214189DC00DBB90B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4BE214189DC00DBB90B /* Place.swift */; };
 		BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C32141962700DBB90B /* BaseViewController.swift */; };
 		BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */; };
+		BC74F4C82141AE1900DBB90B /* BasePlaceAwareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C72141AE1900DBB90B /* BasePlaceAwareViewModel.swift */; };
+		BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C92141B03500DBB90B /* PlaceCell.swift */; };
+		BC74F4CC2141B29900DBB90B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		BC74F4BE214189DC00DBB90B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		BC74F4C32141962700DBB90B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		BC74F4C72141AE1900DBB90B /* BasePlaceAwareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePlaceAwareViewModel.swift; sourceTree = "<group>"; };
+		BC74F4C92141B03500DBB90B /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC74F4CC2141B29900DBB90B /* AlamofireImage.framework in Frameworks */,
 				BC74F4A421417D4F00DBB90B /* JGProgressHUD.framework in Frameworks */,
 				BC74F4BB2141871C00DBB90B /* Contentful.framework in Frameworks */,
 				BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */,
@@ -188,6 +195,7 @@
 			children = (
 				BC74F45E2141661300DBB90B /* ListViewController.swift */,
 				BC74F4B0214182C500DBB90B /* ListViewModel.swift */,
+				BC74F4C92141B03500DBB90B /* PlaceCell.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 		BC74F4902141791F00DBB90B /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */,
 				BC74F4B92141871C00DBB90B /* Contentful.framework */,
 				BC74F4BA2141871C00DBB90B /* Interstellar.framework */,
 				BC74F4A221417D4F00DBB90B /* Alamofire.framework */,
@@ -223,6 +232,7 @@
 				BC74F48D2141716500DBB90B /* list */,
 				BC74F48C2141715A00DBB90B /* map */,
 				BC74F4C32141962700DBB90B /* BaseViewController.swift */,
+				BC74F4C72141AE1900DBB90B /* BasePlaceAwareViewModel.swift */,
 			);
 			path = features;
 			sourceTree = "<group>";
@@ -423,6 +433,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Contentful.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Interstellar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
@@ -433,6 +444,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwinjectStoryboard.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,10 +461,12 @@
 				BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */,
 				BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */,
 				BC74F4B1214182C500DBB90B /* ListViewModel.swift in Sources */,
+				BC74F4C82141AE1900DBB90B /* BasePlaceAwareViewModel.swift in Sources */,
 				BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */,
 				BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */,
 				BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */,
 				BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */,
+				BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */,
 				BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */,
 				BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */,
 				BC74F4B3214182DA00DBB90B /* MapViewModel.swift in Sources */,

@@ -7,33 +7,10 @@
 //
 
 import UIKit
-import Interstellar
 
-class MapViewModel {
+class MapViewModel: BasePlaceAwareViewModel {
 
-    let showLoading = Observable<Bool>()
-    let places = Observable<[Place]>()
-    let error = Observable<String>()
-    
-    private let placeRepository: PlaceRepository
-    
-    init(placeRepository: PlaceRepository) {
-        self.placeRepository = placeRepository
+    override init(placeRepository: PlaceRepository) {
+        super.init(placeRepository: placeRepository)
     }
-    
-    func fetchPlaces() {
-        showLoading.update(true)
-        placeRepository.fetchAlPlaces { [weak self] (places, error) in
-            guard let strongSelf = self else { return }
-            strongSelf.showLoading.update(false)
-            if let unwrappedPlaces = places {
-                strongSelf.places.update(unwrappedPlaces)
-            } else if error != nil {
-                strongSelf.error.update(error?.localizedDescription ?? "Unknown error")
-            } else {
-                strongSelf.error.update("Unknown error")
-            }
-        }
-    }
-    
 }

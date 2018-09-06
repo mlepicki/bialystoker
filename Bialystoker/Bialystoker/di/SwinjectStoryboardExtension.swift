@@ -36,8 +36,8 @@ extension SwinjectStoryboard {
             MapViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
         }
         
-        defaultContainer.register(ListViewModel.self) { _ in
-            ListViewModel()
+        defaultContainer.register(ListViewModel.self) { r in
+            ListViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
         }
         
         defaultContainer.register(AboutViewModel.self) { _ in

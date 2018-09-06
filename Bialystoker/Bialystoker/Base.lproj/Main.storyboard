@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,30 +65,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="epc-LK-a01">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="placeCell" rowHeight="100" id="v4d-4F-xNr" customClass="PlaceCell" customModule="Bialystoker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v4d-4F-xNr" id="g7o-uh-Pid">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y5P-u2-LXl">
+                                                    <rect key="frame" x="20" y="20" width="60" height="59.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="G8w-t1-V41"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Sb5-yG-nve"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-tG-o4g">
+                                                    <rect key="frame" x="96" y="20" width="244" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJA-CH-8Qt">
+                                                    <rect key="frame" x="96" y="48" width="244" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EJA-CH-8Qt" firstAttribute="leading" secondItem="Phg-tG-o4g" secondAttribute="leading" id="0TZ-d1-0lx"/>
+                                                <constraint firstItem="Phg-tG-o4g" firstAttribute="leading" secondItem="Y5P-u2-LXl" secondAttribute="trailing" constant="16" id="AWG-zk-NiB"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y5P-u2-LXl" secondAttribute="bottom" constant="20" id="Stp-zX-XF2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Phg-tG-o4g" secondAttribute="trailing" constant="20" id="WYz-JR-w7A"/>
+                                                <constraint firstItem="EJA-CH-8Qt" firstAttribute="top" secondItem="Phg-tG-o4g" secondAttribute="bottom" constant="4" id="XBc-Sb-CFx"/>
+                                                <constraint firstItem="Y5P-u2-LXl" firstAttribute="top" secondItem="g7o-uh-Pid" secondAttribute="top" constant="20" id="aDd-xx-B49"/>
+                                                <constraint firstItem="Phg-tG-o4g" firstAttribute="top" secondItem="Y5P-u2-LXl" secondAttribute="top" id="bex-mH-rCt"/>
+                                                <constraint firstItem="Y5P-u2-LXl" firstAttribute="leading" secondItem="g7o-uh-Pid" secondAttribute="leading" constant="20" id="fjY-d4-iab"/>
+                                                <constraint firstItem="EJA-CH-8Qt" firstAttribute="trailing" secondItem="Phg-tG-o4g" secondAttribute="trailing" id="xb0-wN-eSc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="placeAddressLabel" destination="EJA-CH-8Qt" id="2Dm-U6-UQV"/>
+                                            <outlet property="placeImageView" destination="Y5P-u2-LXl" id="XKs-3a-MyX"/>
+                                            <outlet property="placeTitleLabel" destination="Phg-tG-o4g" id="ndi-i8-uKf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="epc-LK-a01" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="Mwz-jN-4Mv"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="epc-LK-a01" secondAttribute="bottom" id="ST6-u6-7v9"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="epc-LK-a01" secondAttribute="trailing" id="fkx-SU-3D6"/>
+                            <constraint firstItem="epc-LK-a01" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="hHn-Nb-9Bd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="List view" image="list" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="epc-LK-a01" id="oEM-LD-J1l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
