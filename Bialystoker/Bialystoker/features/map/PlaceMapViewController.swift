@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  PlaceMapViewController.swift
 //  Bialystoker
 //
 //  Created by Marcin Lepicki on 06/09/2018.
@@ -9,10 +9,12 @@
 import UIKit
 import MapKit
 
-class MapViewController: BaseViewController, MKMapViewDelegate {
+class PlaceMapViewController: BaseViewController, MKMapViewDelegate {
 
     // Injected
-    var viewModel: MapViewModel!
+    var viewModel: PlaceMapViewModel!
+    
+    var selectedPlace: Place?
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -92,6 +94,18 @@ class MapViewController: BaseViewController, MKMapViewDelegate {
         view?.rightCalloutAccessoryView = UIButton(type: .infoLight)
 
         return view
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let placeAnnotation = view.annotation as? PlaceAnnotation else { return }
+        selectedPlace = placeAnnotation.place
+        performSegue(withIdentifier: "showDetailsFromMap", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? PlaceDetailsViewController {
+            detailsVC.place = self.selectedPlace
+        }
     }
 
 }

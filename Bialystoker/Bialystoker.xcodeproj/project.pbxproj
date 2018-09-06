@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45A2141661300DBB90B /* AppDelegate.swift */; };
-		BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45C2141661300DBB90B /* MapViewController.swift */; };
-		BC74F45F2141661300DBB90B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45E2141661300DBB90B /* ListViewController.swift */; };
+		BC74F45D2141661300DBB90B /* PlaceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45C2141661300DBB90B /* PlaceMapViewController.swift */; };
+		BC74F45F2141661300DBB90B /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F45E2141661300DBB90B /* PlaceListViewController.swift */; };
 		BC74F4622141661300DBB90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4602141661300DBB90B /* Main.storyboard */; };
 		BC74F4642141661400DBB90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4632141661400DBB90B /* Assets.xcassets */; };
 		BC74F4672141661400DBB90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74F4652141661400DBB90B /* LaunchScreen.storyboard */; };
@@ -24,8 +24,8 @@
 		BC74F4A921417D4F00DBB90B /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */; };
 		BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4AC21417E7F00DBB90B /* SwinjectStoryboardExtension.swift */; };
 		BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4AE21417F9F00DBB90B /* AboutViewModel.swift */; };
-		BC74F4B1214182C500DBB90B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B0214182C500DBB90B /* ListViewModel.swift */; };
-		BC74F4B3214182DA00DBB90B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B2214182DA00DBB90B /* MapViewModel.swift */; };
+		BC74F4B1214182C500DBB90B /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B0214182C500DBB90B /* PlaceListViewModel.swift */; };
+		BC74F4B3214182DA00DBB90B /* PlaceMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B2214182DA00DBB90B /* PlaceMapViewModel.swift */; };
 		BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4B52141839A00DBB90B /* PlaceRepository.swift */; };
 		BC74F4BB2141871C00DBB90B /* Contentful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4B92141871C00DBB90B /* Contentful.framework */; };
 		BC74F4BC2141871C00DBB90B /* Interstellar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4BA2141871C00DBB90B /* Interstellar.framework */; };
@@ -35,6 +35,7 @@
 		BC74F4C82141AE1900DBB90B /* BasePlaceAwareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C72141AE1900DBB90B /* BasePlaceAwareViewModel.swift */; };
 		BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4C92141B03500DBB90B /* PlaceCell.swift */; };
 		BC74F4CC2141B29900DBB90B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */; };
+		BC74F4CF2141B62B00DBB90B /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74F4CE2141B62B00DBB90B /* PlaceDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,8 @@
 /* Begin PBXFileReference section */
 		BC74F4572141661300DBB90B /* Bialystoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bialystoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74F45A2141661300DBB90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC74F45C2141661300DBB90B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		BC74F45E2141661300DBB90B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BC74F45C2141661300DBB90B /* PlaceMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapViewController.swift; sourceTree = "<group>"; };
+		BC74F45E2141661300DBB90B /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
 		BC74F4612141661300DBB90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC74F4632141661400DBB90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC74F4662141661400DBB90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,8 +79,8 @@
 		BC74F4A321417D4F00DBB90B /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
 		BC74F4AC21417E7F00DBB90B /* SwinjectStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardExtension.swift; sourceTree = "<group>"; };
 		BC74F4AE21417F9F00DBB90B /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
-		BC74F4B0214182C500DBB90B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		BC74F4B2214182DA00DBB90B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BC74F4B0214182C500DBB90B /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		BC74F4B2214182DA00DBB90B /* PlaceMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapViewModel.swift; sourceTree = "<group>"; };
 		BC74F4B52141839A00DBB90B /* PlaceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRepository.swift; sourceTree = "<group>"; };
 		BC74F4B92141871C00DBB90B /* Contentful.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contentful.framework; path = Carthage/Build/iOS/Contentful.framework; sourceTree = SOURCE_ROOT; };
 		BC74F4BA2141871C00DBB90B /* Interstellar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Interstellar.framework; path = Carthage/Build/iOS/Interstellar.framework; sourceTree = SOURCE_ROOT; };
@@ -89,6 +90,7 @@
 		BC74F4C72141AE1900DBB90B /* BasePlaceAwareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePlaceAwareViewModel.swift; sourceTree = "<group>"; };
 		BC74F4C92141B03500DBB90B /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		BC74F4CB2141B29800DBB90B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
+		BC74F4CE2141B62B00DBB90B /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,8 +185,8 @@
 		BC74F48C2141715A00DBB90B /* map */ = {
 			isa = PBXGroup;
 			children = (
-				BC74F45C2141661300DBB90B /* MapViewController.swift */,
-				BC74F4B2214182DA00DBB90B /* MapViewModel.swift */,
+				BC74F45C2141661300DBB90B /* PlaceMapViewController.swift */,
+				BC74F4B2214182DA00DBB90B /* PlaceMapViewModel.swift */,
 				BC74F4C521419CB900DBB90B /* PlaceAnnotation.swift */,
 			);
 			path = map;
@@ -193,8 +195,8 @@
 		BC74F48D2141716500DBB90B /* list */ = {
 			isa = PBXGroup;
 			children = (
-				BC74F45E2141661300DBB90B /* ListViewController.swift */,
-				BC74F4B0214182C500DBB90B /* ListViewModel.swift */,
+				BC74F45E2141661300DBB90B /* PlaceListViewController.swift */,
+				BC74F4B0214182C500DBB90B /* PlaceListViewModel.swift */,
 				BC74F4C92141B03500DBB90B /* PlaceCell.swift */,
 			);
 			path = list;
@@ -228,6 +230,7 @@
 		BC74F4AA21417D6400DBB90B /* features */ = {
 			isa = PBXGroup;
 			children = (
+				BC74F4CD2141B61200DBB90B /* details */,
 				BC74F48E2141717800DBB90B /* about */,
 				BC74F48D2141716500DBB90B /* list */,
 				BC74F48C2141715A00DBB90B /* map */,
@@ -275,6 +278,14 @@
 				BC74F4BE214189DC00DBB90B /* Place.swift */,
 			);
 			path = contentful;
+			sourceTree = "<group>";
+		};
+		BC74F4CD2141B61200DBB90B /* details */ = {
+			isa = PBXGroup;
+			children = (
+				BC74F4CE2141B62B00DBB90B /* PlaceDetailsViewController.swift */,
+			);
+			path = details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,19 +468,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC74F45F2141661300DBB90B /* ListViewController.swift in Sources */,
+				BC74F45F2141661300DBB90B /* PlaceListViewController.swift in Sources */,
 				BC74F45B2141661300DBB90B /* AppDelegate.swift in Sources */,
 				BC74F4C42141962700DBB90B /* BaseViewController.swift in Sources */,
-				BC74F4B1214182C500DBB90B /* ListViewModel.swift in Sources */,
+				BC74F4B1214182C500DBB90B /* PlaceListViewModel.swift in Sources */,
 				BC74F4C82141AE1900DBB90B /* BasePlaceAwareViewModel.swift in Sources */,
 				BC74F4C621419CB900DBB90B /* PlaceAnnotation.swift in Sources */,
+				BC74F4CF2141B62B00DBB90B /* PlaceDetailsViewController.swift in Sources */,
 				BC74F4B62141839A00DBB90B /* PlaceRepository.swift in Sources */,
 				BC74F4AF21417F9F00DBB90B /* AboutViewModel.swift in Sources */,
 				BC74F4AD21417E7F00DBB90B /* SwinjectStoryboardExtension.swift in Sources */,
 				BC74F4CA2141B03500DBB90B /* PlaceCell.swift in Sources */,
 				BC74F48B2141712600DBB90B /* AboutViewController.swift in Sources */,
-				BC74F45D2141661300DBB90B /* MapViewController.swift in Sources */,
-				BC74F4B3214182DA00DBB90B /* MapViewModel.swift in Sources */,
+				BC74F45D2141661300DBB90B /* PlaceMapViewController.swift in Sources */,
+				BC74F4B3214182DA00DBB90B /* PlaceMapViewModel.swift in Sources */,
 				BC74F4BF214189DC00DBB90B /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

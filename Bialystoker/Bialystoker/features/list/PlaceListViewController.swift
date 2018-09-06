@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  PlaceListViewController.swift
 //  Bialystoker
 //
 //  Created by Marcin Lepicki on 06/09/2018.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class PlaceListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Injected
-    var viewModel: ListViewModel!
+    var viewModel: PlaceListViewModel!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var selectedPlace: Place?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,5 +72,17 @@ class ListViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         }
         
         return placeCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlace = viewModel.places.value?[indexPath.row]
+        performSegue(withIdentifier: "showDetailsFromList", sender: self)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? PlaceDetailsViewController {
+            detailsVC.place = self.selectedPlace
+        }
     }
 }

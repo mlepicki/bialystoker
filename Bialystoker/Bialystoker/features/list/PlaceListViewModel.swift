@@ -1,5 +1,5 @@
 //
-//  ListViewModel.swift
+//  PlaceListViewModel.swift
 //  Bialystoker
 //
 //  Created by Marcin Lepicki on 06/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListViewModel: BasePlaceAwareViewModel {
+class PlaceListViewModel: BasePlaceAwareViewModel {
     
     override init(placeRepository: PlaceRepository) {
         super.init(placeRepository: placeRepository)

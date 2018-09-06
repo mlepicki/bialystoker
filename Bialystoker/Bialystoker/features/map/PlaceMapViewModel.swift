@@ -1,5 +1,5 @@
 //
-//  MapViewModel.swift
+//  PlaceMapViewModel.swift
 //  Bialystoker
 //
 //  Created by Marcin Lepicki on 06/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MapViewModel: BasePlaceAwareViewModel {
+class PlaceMapViewModel: BasePlaceAwareViewModel {
 
     override init(placeRepository: PlaceRepository) {
         super.init(placeRepository: placeRepository)

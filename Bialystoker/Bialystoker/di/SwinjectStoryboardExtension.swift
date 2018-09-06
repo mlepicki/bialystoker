@@ -18,6 +18,7 @@ extension SwinjectStoryboard {
         // disable logging due to https://github.com/Swinject/Swinject/issues/213
         Container.loggingFunction = nil
 
+        // Services, repositories etc.
         defaultContainer.register(Client.self) { _ in
             let contentTypeClasses: [EntryDecodable.Type] = [
                 Place.self
@@ -32,24 +33,26 @@ extension SwinjectStoryboard {
             PlaceRepository(client: r.resolve(Client.self)!)
         }
         
-        defaultContainer.register(MapViewModel.self) { r in
-            MapViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
+        // view models
+        defaultContainer.register(PlaceMapViewModel.self) { r in
+            PlaceMapViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
         }
         
-        defaultContainer.register(ListViewModel.self) { r in
-            ListViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
+        defaultContainer.register(PlaceListViewModel.self) { r in
+            PlaceListViewModel(placeRepository: r.resolve(PlaceRepository.self)!)
         }
         
         defaultContainer.register(AboutViewModel.self) { _ in
             AboutViewModel()
         }
         
-        defaultContainer.storyboardInitCompleted(MapViewController.self) { r, c in
-            c.viewModel = r.resolve(MapViewModel.self)
+        // view controllers
+        defaultContainer.storyboardInitCompleted(PlaceMapViewController.self) { r, c in
+            c.viewModel = r.resolve(PlaceMapViewModel.self)
         }
 
-        defaultContainer.storyboardInitCompleted(ListViewController.self) { r, c in
-            c.viewModel = r.resolve(ListViewModel.self)
+        defaultContainer.storyboardInitCompleted(PlaceListViewController.self) { r, c in
+            c.viewModel = r.resolve(PlaceListViewModel.self)
         }
         
         defaultContainer.storyboardInitCompleted(AboutViewController.self) { r, c in
